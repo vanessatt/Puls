@@ -1,0 +1,132 @@
+a{
+	color: #DD4F24;  /* con esto obligo a que todos los enlaces tengan ese color*/
+}
+
+body
+{
+	background: #EFEFEF;
+	color:#4C4C4C;
+	font-family: "PT Sans" ,Arial;  /* el pt sanz es de la linea que he añadido en el .html para el tipo de letra que he cogido de google */
+	font-size :16px;
+	margin :0;
+}
+header{
+	
+	background : #434343;
+	color: white;
+	margin: 0;
+	padding: 0.5em;
+}
+header figure, header h1{
+	display: inline-block;
+	vertical-align:top;
+}
+
+header h1{
+	font-size :20px;
+	font-weight: normal;
+	margin: 1em 0 0 1em;
+	width :60%;
+}
+header #avatar {
+	
+	float:right;  /* con esto digo en q parte quiero que este el objeto con respecto al resto de elementos de su contenedor*/
+	margin :1em 1em 0 0;
+}
+header #avatar figcaption{
+	background: #22BCE0;
+	float: right;
+	height: 50px;
+	padding: 0 2px; /* se pone padding en vez de margin pq es un elemento clickeable, y el margen del paddind se puede clikear, el del margin no-*/
+}
+header #avatar img    /* los nombres de # se van poniendo por orden alfabetico*/
+{
+	width: 50px;
+	float:left;
+}
+
+header #logo img
+{
+	width: 80px;   /* a las imagenes solo hay  qponerle el ancho, el alto ya lo pone los navegadores */
+}
+
+nav{
+background: #878787;	
+font-size:0.9em;
+
+}
+
+nav ul{
+	list-style:none;    /*para quitar el la viñeta (punto) de los elementos de la lista*/
+	margin:0;
+	padding:0;
+}
+nav ul li{
+	display: inline-block;  /*para que salgan los elemntos en una sola linea */
+	margin: 0 1em 0 0; /*ponemos espacio entre los elementos de la lista */
+	vertical-align:top;
+}
+
+nav ul li a{
+	color:white;
+	display:block; /* para poner padding hay q poner block ya que inline no tiene esta propiedad*/
+	padding: 0.5em 0	;  /*para dejar espacio por arriba y abajo de los elementos*/
+}
+nav #flechita_nav a {
+	background:#22BCE0;
+	padding: 0.5em 0.5em;
+	text-decoration:none;
+}
+nav #publicar_nav {
+	float:right;
+	margin-right: 0;
+}
+
+nav #publicar_nav a{
+	background:#DD4F24;
+	padding: 0.5em 1em;
+	text-decoration:none;   /*para quitar el subrayado del texto */
+}
+#contenido {
+	
+	margin :1em ;
+}
+#contenido .item{
+	background:white;
+	border-bottom: #22BCE0 solid;  /*con esto se pone un borde solo en la arte de abajo de una celda */
+}
+
+#contenido .item p{
+	color: #7A7A7A;
+	font-size: 0.9em;
+}
+
+#contenido .item .datos_item .tag_item{
+	background:#22BCE0;
+	border-radius: 0.5em;   /*para poner las esquinas redondas en una caja*/
+	color:white;
+	padding:0.2em 0.5em;
+	text-decoration:none;
+
+}
+#contenido .item .imagen_item {
+	float:left;
+	margin : 0 1em 0 0;
+}
+
+#contenido .item  .imagen_item img  /*cuando lo q queremos cambiar esta dentro de varios "nombres" se accede mediante '.' */
+{
+	width: 96px;
+}
+
+#contenido .item .titulo_item{
+	font-size:1em;
+	font-style:italic;
+	padding:0.5em 0 0.5em 0;
+
+}
+
+#contenido .item .titulo_item a{
+	color:#444;
+	text-decoration:none;
+}

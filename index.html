@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset ="utf-8" />
+	<title>Mi primera web app</title>   
+	<link rel="stylesheet" href="normalize.css"/> 
+<!-- la linea de abajo es para el estilo de letra y se saca de google.com/fonts -->
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="estilos.css"/>
+
+</head>
+<body>
+	<header>
+		<figure id="logo">    <!--el id es para identificar algo q solo pasa una vez-->
+			<img src="logo.png" />
+		</figure>
+		<h1 id ="titulo_header"> Puls3: Comunidad de gente cool, atractiva y millonaria. </h1> <!--como maximo 70 caracteres -->
+		<figure id ="avatar">
+			<img src="avatar.jpg"/>
+			<figcaption>
+				*
+			</figcaption>
+		</figure>
+	</header>
+
+	<nav>
+		<ul>
+			<li id="flechita_nav"><a href="*">*</a></li>
+			<li><a href="*">Python</a></li>
+			<li><a href="*">HTML5</a></li>
+			<li><a href="*">JavaScript</a></li>
+			<li><a href="*">CSS3</a></li>
+			<li><a href="*">Django</a></li>
+			<li id="publicar_nav"><a href="*">Publicar</a></li>
+		</ul>
+	</nav>
+	<section id="contenido">
+		<article class="item">		<!-- como los articluos se repiten mas veces se usa class en vez de id -->
+			<figure class ="imagen_item">
+				<img src="imagen.jpg"/>
+			</figure>
+			<h2 class="titulo_item">
+				<a href="*">Streeteasy de Sebastian Delmont @sd, vendida a 50 millones de dólares</a>
+			</h2>
+			<p class="autor_item">
+				Por <a href="*">Vanessa Trabajo </a>
+			</p>
+			<p class="datos_item">
+				<a class="tag_item" href="*">Categoría</a>
+				<spam class="fecha_item" ><strong>Hace 5 mnutos </strong></spam>
+				<a class="comentarios_item" href ="*">455</a>
+				<a class="guardar_item" href ="*">*</a>
+			</p>
+			<p class="votacion_item" >
+				<a class="up"  href="*">Up</a>
+				3141
+				<a class="down" href="*">Down</a>
+			</p>
+		</article>
+		
+	</section>
+	<footer>
+			<p><strong>Powered by Vanessa!</strong></p>
+			<p>Mejorando.la 2013 </p>
+	</foter>
+</body>
+</html>
